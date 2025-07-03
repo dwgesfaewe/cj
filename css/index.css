@@ -20197,3 +20197,82 @@ div.pro-gallery.thumbnails-gallery .gallery-item-container .info-element-custom-
 div.comp-lbwcxrhg4:not(.fullscreen-comp-wrapper) {
                                                                                                             width: 100%;
                                                                                                         }
+.cgGlGU .NIXfHQ {
+    box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
+    min-height: 1px;
+    position: relative;
+    -webkit-transform: translateZ(0);
+}
+.cgGlGU>ul {
+    box-sizing: border-box;
+    width: 100%;
+}
+.cgGlGU>ul li {
+    display: block;
+}
+.u4cNtA {
+    background-color: rgba(var(--bg, var(--color_11, color_11)), var(--alpha-bg, 1));
+    border-color: rgba(var(--brd, var(--color_15, color_15)), var(--alpha-brd, 1));
+    border-style: solid;
+    border-width: var(--brw, 1px);
+    box-sizing: border-box;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    position: relative;
+    text-align: var(--text-align, left);
+    transition: var(--itemBGColorTrans, background-color .4s ease 0s);
+}
+.u4cNtA.QqwXfj>.fEGEM_ {
+    background-color: rgba(var(--bgs, var(--color_15, color_15)), var(--alpha-bgs, 1));
+}
+.OZVMSN .fEGEM_ {
+    direction: var(--item-depth0-direction);
+    text-align: var(--item-depth0-align, var(--text-align));
+}
+.u4cNtA .fEGEM_ {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    position: relative;
+}
+.u4cNtA .fEGEM_>.kGvnrc {
+    display: grid
+;
+    position: relative;
+    text-overflow: ellipsis;
+}
+.u4cNtA .fEGEM_>.kGvnrc {
+    display: grid
+;
+    position: relative;
+    text-overflow: ellipsis;
+}
+.u4cNtA.QqwXfj>.fEGEM_>.kGvnrc>.xfxJ27 {
+    color: rgb(var(--txtsSub, var(--color_13, color_13)));
+    color: rgb(var(--txts, var(--color_13, color_13)));
+}
+.u4cNtA .fEGEM_>.kGvnrc>.xfxJ27 {
+    color: rgb(var(--txt, var(--color_15, color_15)));
+    display: inline;
+    font: var(--fnt, var(--font_1));
+    overflow: hidden;
+    padding-bottom: var(--verticalPadding, 0);
+    padding-top: var(--verticalPadding, 0);
+    position: relative;
+    text-overflow: ellipsis;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
+.u4cNtA .xfxJ27 {
+    padding-inline-end: var(--padding-end, 0);
+    padding-inline-start: var(--padding-start, 0);
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
