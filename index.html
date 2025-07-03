@@ -8,15 +8,15 @@
     <meta name="generator" content="Wix.com Website Builder">
     <title>Home | MOONROCK</title>
     <link href="css/index.css" rel="stylesheet" type="text/css" />
+
+
     <script src="js/requirejs.min.js"></script>
     <script src="js/rb_wixui.thunderbolt_bootstrap.3fbbd89c.bundle.min.js"></script>
     <script src="js/rb_wixui.thunderbolt_bootstrap-classic.ee97aa67.bundle.min.js"></script>
     <script src="js/rb_wixui.thunderbolt_menu.826d8aa9.bundle.min.js"></script>
     <script src="js/rb_wixui.thunderbolt_mobile.b96fbdfc.bundle.min.js"></script>
     <script src="js/rb_wixui.thunderbolt[HeaderContainer_ShadowBottomScreen].d8775ceb.bundle.min.js"></script>
-    
     <script src="js/rb_wixui.thunderbolt[StripColumnsContainer_Default].77c39bf3.bundle.min.js"></script>
-    
     <script src="js/rb_wixui.thunderbolt[SkipToContentButton].69abe737.bundle.min.js"></script>
     <script src="js/rb_wixui.thunderbolt[FiveGridLine_SolidLine].b91bad1d.bundle.min.js"></script>
     <script src="js/rb_wixui.thunderbolt[StylableButton_Default].e9a3f61d.bundle.min.js"></script>
@@ -42,9 +42,6 @@
 
     <div id="SITE_CONTAINER" style="">
         <div id="main_MF" class="main_MF">
-            <div id="SCROLL_TO_TOP" class="Vd6aQZ ignore-focus SCROLL_TO_TOP" role="region" tabindex="-1"
-                aria-label="top of page"><span class="mHZSwn">top of page</span></div><button id="SKIP_TO_CONTENT_BTN"
-                class="SKIP_TO_CONTENT_BTN LHrbPP has-custom-focus" tabindex="0">Skip to Main Content</button>
             <div id="BACKGROUND_GROUP" class="backgroundGroup_tuckg BACKGROUND_GROUP">
                 <div id="BACKGROUND_GROUP_TRANSITION_GROUP">
                     <div id="pageBackground_tuckg" data-media-height-override-type=""
@@ -100,7 +97,7 @@
                                                             <div id="comp-lbi9zf2o"
                                                                 class="MazNVa comp-lbi9zf2o wixui-image rYiAuL"
                                                                 data-motion-enter="done"></div>
-                                                            <div id="comp-lz75evon" class="">
+                                                            <div id="comp-lz75evon" class="" onclick="showMenu()">
                                                                 <nav aria-label="Site"
                                                                     class="HamburgerOpenButton3537389287__nav">
                                                                     <div id="comp-lz75evqo"
@@ -1635,11 +1632,8 @@
                             </div>
                         </div>
                     </footer>
-                    <div id="comp-lz75evqs"
-                        class="HamburgerOverlay547129737--showBackgroundOverlay HamburgerOverlay547129737--shouldScroll HamburgerOverlay547129737__root scemAM"
-                        role="dialog" aria-modal="true" aria-label="Site navigation" data-visible="false"
-                        data-hook="hamburger-overlay-root" tabindex="-1" data-part="hamburger-overlay"
-                        data-animation-name="none">
+                    <div id="compMenus"
+                        class="HamburgerOverlay547129737--showBackgroundOverlay HamburgerOverlay547129737--shouldScroll HamburgerOverlay547129737__root scemAM">
                         <div class="HamburgerOverlay547129737__scrollContent">
                             <div data-hook="hamburger-overlay-dialog" aria-hidden="true"
                                 class="HamburgerOverlay547129737__overlay"></div>
@@ -1681,7 +1675,7 @@
                                                                         <button type="button"
                                                                             class="StylableButton2545352419__root style-lz75evrf2__root wixui-hamburger-close-button"
                                                                             data-testid="buttonContent"
-                                                                            aria-label="Close"><span
+                                                                            aria-label="Close" onclick="closeMenus()"><span
                                                                                 class="StylableButton2545352419__container"><span
                                                                                     class="StylableButton2545352419__label wixui-hamburger-close-button__label"
                                                                                     data-testid="stylablebutton-label">Close</span><span
@@ -1730,30 +1724,6 @@
                                                                                             class="xfxJ27 wixui-vertical-menu__item-label">Portfolio</a></span>
                                                                                 </div>
                                                                             </li>
-                                                                            <li data-testid="comp-lz75evrf3-2"
-                                                                                class="u4cNtA YLBS9j OZVMSN wixui-vertical-menu__item">
-                                                                                <div data-testid="itemWrapper"
-                                                                                    class="fEGEM_"><span
-                                                                                        data-testid="linkWrapper"
-                                                                                        class="kGvnrc"><a
-                                                                                            data-testid="linkElement"
-                                                                                            href="#"
-                                                                                            target="_self"
-                                                                                            class="xfxJ27 wixui-vertical-menu__item-label">MoonrockX</a></span>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li data-testid="comp-lz75evrf3-3"
-                                                                                class="u4cNtA YLBS9j OZVMSN wixui-vertical-menu__item">
-                                                                                <div data-testid="itemWrapper"
-                                                                                    class="fEGEM_"><span
-                                                                                        data-testid="linkWrapper"
-                                                                                        class="kGvnrc"><a
-                                                                                            data-testid="linkElement"
-                                                                                            href="#"
-                                                                                            target="_self"
-                                                                                            class="xfxJ27 wixui-vertical-menu__item-label">Writings</a></span>
-                                                                                </div>
-                                                                            </li>
                                                                             <li data-testid="comp-lz75evrf3-4"
                                                                                 class="u4cNtA YLBS9j OZVMSN wixui-vertical-menu__item">
                                                                                 <div data-testid="itemWrapper"
@@ -1793,7 +1763,14 @@
 
 
     <script defer="" src="js/siteTags.bundle.min.js"></script>
-
+    <script>
+        function showMenu(){
+            document.getElementById("compMenus").style.visibility = 'visible'
+        }
+        function closeMenus(){
+            document.getElementById("compMenus").style.visibility = 'hidden'
+        }
+    </script>
 
 
 
