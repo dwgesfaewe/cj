@@ -9718,8 +9718,10 @@ a {
 }
 
 #comp-lz75evon {
-    width: 61px;
+    width: 151px;
     height: 61px;
+    display: flex;
+    align-items: center;
 }
 
 /* END STYLABLE DIRECTIVE RULES */
@@ -11042,7 +11044,7 @@ a {
     position: static;
     height: 94px;
     width: 0;
-    margin: 21px 0px 10px calc((100% - 327px) * 0.5);
+    margin: 81px 0px 10px calc((100% - 327px) * 0.5);
     grid-area: 1 / 1 / 2 / 2;
     justify-self: start;
     align-self: start;
@@ -20328,6 +20330,7 @@ a {
 }
 .wixui-rich-text__text1{
     animation: blink 2s infinite;
+    font-size: 100px;
 }
 
 .AnQkDU {
