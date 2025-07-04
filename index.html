@@ -1690,11 +1690,11 @@
         window.onload = function() {
             var lang = window.localStorage.getItem('lang');
             if(lang === 'zh') {
-                document.getElementById('jieshao').innerHTML = 'CJ VENTURES is an international investment institution under the CJ Group, specializing in emerging digital technology industries. Leveraging its profound industry expertise and global resource network, it actively seeks out and invests in companies with innovative technologies and business models, supporting their rapid growth while also exploring new business areas and growth opportunities for the CJ Group.';
-                document.getElementById('jieshao2').innerHTML = 'CJ VENTURES primarily invests in cutting-edge technology sectors such as artificial intelligence, big data, blockchain, RWA (Real World Assets), and fintech. Through equity investments, incubation and acceleration programs, and strategic resource partnerships, it provides portfolio companies with financial support and strategic guidance. This helps them achieve technological breakthroughs and market expansion, collectively building a digital technology ecosystem.';
-            } else {
                 document.getElementById('jieshao').innerHTML = 'CJ VENTURES是CJ集团旗下的国际投资机构，专注于新兴数字科技产业。凭借深厚的行业经验和全球资源网络，积极寻找并投资具有创新技术和商业模式的企业，助力其快速成长，同时也为CJ集团开拓新的业务领域和增长点.';
                 document.getElementById('jieshao2').innerHTML = 'CJ VENTURES主要投资于人工智能、大数据、区块链、RWA、金融科技等前沿科技领域。通过股权投资、孵化加速和战略资源对接等方式，为被投企业提供资金支持和战略指导，帮助它们实现技术突破和市场拓展，共同构建数字科技生态圈.';
+            } else {
+                document.getElementById('jieshao').innerHTML = 'CJ VENTURES is an international investment institution under the CJ Group, specializing in emerging digital technology industries. Leveraging its profound industry expertise and global resource network, it actively seeks out and invests in companies with innovative technologies and business models, supporting their rapid growth while also exploring new business areas and growth opportunities for the CJ Group.';
+                document.getElementById('jieshao2').innerHTML = 'CJ VENTURES primarily invests in cutting-edge technology sectors such as artificial intelligence, big data, blockchain, RWA (Real World Assets), and fintech. Through equity investments, incubation and acceleration programs, and strategic resource partnerships, it provides portfolio companies with financial support and strategic guidance. This helps them achieve technological breakthroughs and market expansion, collectively building a digital technology ecosystem.';
             }
         }
         function setLang(lang) {
