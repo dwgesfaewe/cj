@@ -20,19 +20,28 @@
             if(lang === 'zh') {
                 document.getElementById('jieshao').innerHTML = 'CJ VENTURES是CJ集团旗下的国际投资机构，专注于新兴数字科技产业。凭借深厚的行业经验和全球资源网络，积极寻找并投资具有创新技术和商业模式的企业，助力其快速成长，同时也为CJ集团开拓新的业务领域和增长点.';
                 document.getElementById('jieshao2').innerHTML = 'CJ VENTURES主要投资于人工智能、大数据、区块链、RWA、金融科技等前沿科技领域。通过股权投资、孵化加速和战略资源对接等方式，为被投企业提供资金支持和战略指导，帮助它们实现技术突破和市场拓展，共同构建数字科技生态圈.';
+                document.getElementById('newTitle').innerHTML = 'CJ VENTURES 创造了 ERWA.';
+                document.getElementById('newLink').innerHTML = 'CJ VENTURES 创造了 ERWA.';
             } else {
                 document.getElementById('jieshao').innerHTML = 'CJ VENTURES is an international investment institution under the CJ Group, specializing in emerging digital technology industries. Leveraging its profound industry expertise and global resource network, it actively seeks out and invests in companies with innovative technologies and business models, supporting their rapid growth while also exploring new business areas and growth opportunities for the CJ Group.';
                 document.getElementById('jieshao2').innerHTML = 'CJ VENTURES primarily invests in cutting-edge technology sectors such as artificial intelligence, big data, blockchain, RWA (Real World Assets), and fintech. Through equity investments, incubation and acceleration programs, and strategic resource partnerships, it provides portfolio companies with financial support and strategic guidance. This helps them achieve technological breakthroughs and market expansion, collectively building a digital technology ecosystem.';
+                document.getElementById('newTitle').innerHTML = 'CJ VENTURES creates ERWA.';
+                document.getElementById('newLink').innerHTML = 'CJ VENTURES creates ERWA.';
+
             }
         }
         function setLang(lang) {
             window.localStorage.setItem('lang', lang);
             if(lang === 'zh') { //中文
+                document.getElementById('newTitle').innerHTML = 'CJ VENTURES 创造了 ERWA.';
+                document.getElementById('newLink').innerHTML = 'CJ VENTURES 创造了 ERWA.';
                 document.getElementById('about').innerHTML = 'CJ VENTURES是CJ集团旗下的国际投资机构，专注于新兴数字科技产业。凭借深厚的行业经验和全球资源网络，积极寻找并投资具有创新技术和商业模式的企业，助力其快速成长，同时也为CJ集团开拓新的业务领域和增长点.';
                 document.getElementById('joinus').innerHTML = 'CJ VENTURES主要投资于人工智能、大数据、区块链、RWA、金融科技等前沿科技领域。通过股权投资、孵化加速和战略资源对接等方式，为被投企业提供资金支持和战略指导，帮助它们实现技术突破和市场拓展，共同构建数字科技生态圈.';
             } else { //英文
                 document.getElementById('about').innerHTML = 'CJ VENTURES is an international investment institution under the CJ Group, specializing in emerging digital technology industries. Leveraging its profound industry expertise and global resource network, it actively seeks out and invests in companies with innovative technologies and business models, supporting their rapid growth while also exploring new business areas and growth opportunities for the CJ Group.';
                 document.getElementById('joinus').innerHTML = 'CJ VENTURES primarily invests in cutting-edge technology sectors such as artificial intelligence, big data, blockchain, RWA (Real World Assets), and fintech. Through equity investments, incubation and acceleration programs, and strategic resource partnerships, it provides portfolio companies with financial support and strategic guidance. This helps them achieve technological breakthroughs and market expansion, collectively building a digital technology ecosystem.';
+                document.getElementById('newTitle').innerHTML = 'CJ VENTURES creates ERWA.';
+                document.getElementById('newLink').innerHTML = 'CJ VENTURES creates ERWA.';
             }
         }
     </script>
@@ -104,8 +113,10 @@
     <section class="writings">
         <div class="title">WRITINGS</div>
         <div class="divider"></div>
-        <div style="width: 319px; height: 219px; background-color: black; color: #fff; text-align: center; display: flex; align-items: center; justify-content: center; font-size: 18px; font-family: Inter;"><i>CJ VENTURES创造了ERWA</i></div>
-        <h2><a href="https://cnews.chinadaily.com.cn/a/202507/08/WS686cbd43a3106af2b3c72f91.html" style="color: black;">CJ VENTURES创造了ERWA</a></h2>
+        <div style="width: 319px; height: 219px; background-color: black; color: #fff; text-align: center; display: flex; align-items: center; justify-content: center; font-size: 18px; font-family: Inter;">
+            <i id="newTitle">CJ VENTURES创造了ERWA</i>
+        </div>
+        <h2><a href="https://cnews.chinadaily.com.cn/a/202507/08/WS686cbd43a3106af2b3c72f91.html" style="color: black;" id="newLink">CJ VENTURES创造了ERWA</a></h2>
         <div class="viewall">
             <a href="#">View All</a>
         </div>
