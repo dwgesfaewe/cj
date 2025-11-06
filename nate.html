@@ -97,9 +97,9 @@
                                                             <div id="comp-lbi9zf2o"
                                                                 class="MazNVa comp-lbi9zf2o wixui-image rYiAuL"
                                                                 data-motion-enter="done"></div>
-                                                            <div id="comp-lz75evon" class="" onclick="showMenu()">
+                                                            <div id="comp-lz75evon" class="">
                                                                 <nav aria-label="Site"
-                                                                    class="HamburgerOpenButton3537389287__nav">
+                                                                    class="HamburgerOpenButton3537389287__nav" onclick="showMenu()">
                                                                     <div id="comp-lz75evqo"
                                                                         class="HamburgerOpenButton3537389287__root StylableButton2545352419__root comp-lz75evqo"
                                                                         data-semantic-classname="hamburger-open-button">
@@ -134,6 +134,7 @@
                                                                                     </span></span></span></button>
                                                                     </div>
                                                                 </nav>
+                                                                <div style="color: #fff; margin-left: 30px;"><a href="javascript:void();" onclick="setLang('zh')" style="color: #ffff; text-decoration: none;">中文</a>&nbsp;|&nbsp;<a href="javascript:void();" onclick="setLang('en')" style="color: #ffff; text-decoration: none;">EN</a></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -385,7 +386,28 @@
                     alert('Failed to copy text: ', err);
                 });
         }
-
+        function setLang(lang) {
+            window.localStorage.setItem('lang', lang);
+            if (lang === 'zh') {
+                document.getElementById('title').innerHTML = '我们正式成立 $ET绿能国库';
+                document.getElementById('title1').innerHTML = '所有捐赠将 公开透明，由DAO治理。<br />资金将用于：';
+                document.getElementById('li1').innerHTML = '全球绿色能源网络搭建';
+                document.getElementById('li2').innerHTML = '社区建设与长期发展';
+                document.getElementById('li3').innerHTML = '对真实建设者的空投激励';
+                document.getElementById('li4').innerHTML = '公益与回馈行动';
+                document.getElementById('title2').innerHTML = '欢迎所有社区成员捐赠与监督。<br />ET绿能，让绿能链接全球，让财富走向自由';
+                document.getElementById('title3').innerHTML = '国库地址：<br />(BSC链，支持BNB和USD1，所有数据链上可查可追溯)';
+            } else {
+                document.getElementById('title').innerHTML = 'We officially establish the $ET Green Energy Treasury';
+                document.getElementById('title1').innerHTML = 'All donations will be transparent and governed by DAO.<br />The funds will be used for:';
+                document.getElementById('li1').innerHTML = 'Building a Global Green Energy Network';
+                document.getElementById('li2').innerHTML = 'Community Construction and Long term Development';
+                document.getElementById('li3').innerHTML = 'Airdrop incentives for real builders';
+                document.getElementById('li4').innerHTML = 'Public Welfare and Feedback Action';
+                document.getElementById('title2').innerHTML = 'Welcome all community members to donate and supervise.<br />ET Green Energy connects the world with green energy and leads wealth towards freedom';
+                document.getElementById('title3').innerHTML = 'Treasury Address:<br />(BSC chain, supporting BNB and USD1, traceable on all data chains)';
+            }
+        }
 
         window.onload = function () {
             var lang = window.localStorage.getItem('lang');
@@ -414,6 +436,5 @@
 
 
 </body>
-
 
 </html>
